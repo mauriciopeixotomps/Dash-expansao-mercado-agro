@@ -118,6 +118,8 @@ const FMT = {
   num2: n => (n==null?'-':Number(n).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})),
 };
 
+const NOTA_PIB_NOMINAL = '⚠ PIB a preços correntes (nominal, não deflacionado). O boom de preços de commodities e a desvalorização do real em 2019–2021 infla os percentuais de crescimento — trate como sinal de onde o agro está "aquecendo" em valor, não como crescimento real de volume.';
+
 Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {display:false});
 
@@ -460,7 +462,7 @@ function renderPanorama(){
 /* ---------- Oportunidades sem franqueado ---------- */
 function renderOportunidades(){
   const sec = document.getElementById('oportunidades');
-  sec.innerHTML = `<h2>Municípios sem Franqueado</h2><p class="subtitle">Ranking por PIB Agro 2021 — ${DATA.oportunidades.length.toLocaleString('pt-BR')} municípios sem presença da rede.</p><div class="card"></div>`;
+  sec.innerHTML = `<h2>Municípios sem Franqueado</h2><p class="subtitle">Ranking por PIB Agro 2021 — ${DATA.oportunidades.length.toLocaleString('pt-BR')} municípios sem presença da rede.</p><div class="note-box">${NOTA_PIB_NOMINAL}</div><div class="card"></div>`;
   buildTable({
     container: sec.querySelector('.card'),
     rows: DATA.oportunidades,
@@ -483,6 +485,7 @@ function renderCrescimentoUF(){
   sec.innerHTML = `
     <h2>Top 10 Municípios que mais Cresceram em PIB Agro (2019→2021)</h2>
     <p class="subtitle">Por estado. Considerados municípios com PIB Agro 2019 > 0.</p>
+    <div class="note-box">${NOTA_PIB_NOMINAL}</div>
     <div class="card">
       <div class="controls">
         <select id="uf-cresc-select">${ufs.map(u=>`<option value="${u}">${u}</option>`).join('')}</select>
@@ -508,7 +511,7 @@ function renderCrescimentoUF(){
 /* ---------- Top 50 Crescimento Geral ---------- */
 function renderCrescimentoGeral(){
   const sec = document.getElementById('crescimento_geral');
-  sec.innerHTML = `<h2>Top 50 Municípios do Brasil — Maior Crescimento de PIB Agro (2019→2021)</h2><p class="subtitle">Ranking nacional, com indicação se a rede já está presente.</p><div class="card"></div>`;
+  sec.innerHTML = `<h2>Top 50 Municípios do Brasil — Maior Crescimento de PIB Agro (2019→2021)</h2><p class="subtitle">Ranking nacional, com indicação se a rede já está presente.</p><div class="note-box">${NOTA_PIB_NOMINAL}</div><div class="card"></div>`;
   buildTable({
     container: sec.querySelector('.card'),
     rows: DATA.top50_crescimento_geral,
@@ -530,7 +533,7 @@ function renderCrescimentoGeral(){
 /* ---------- Top 50 PIB Não Abordado ---------- */
 function renderPibAberto(){
   const sec = document.getElementById('pib_aberto');
-  sec.innerHTML = `<h2>Top 50 Maiores PIBs Agro sem Franqueado</h2><p class="subtitle">Municípios sem presença da rede, ordenados por potencial absoluto (PIB Agro 2021).</p><div class="card"></div>`;
+  sec.innerHTML = `<h2>Top 50 Maiores PIBs Agro sem Franqueado</h2><p class="subtitle">Municípios sem presença da rede, ordenados por potencial absoluto (PIB Agro 2021).</p><div class="note-box">${NOTA_PIB_NOMINAL}</div><div class="card"></div>`;
   buildTable({
     container: sec.querySelector('.card'),
     rows: DATA.top50_pib_nao_abordado,
