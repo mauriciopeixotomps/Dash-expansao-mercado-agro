@@ -70,6 +70,13 @@
   .badge-inativo{background:rgba(130,131,132,.18);color:var(--inativo);}
   .badge-nao{background:rgba(130,131,132,.18);color:var(--inativo);}
   .badge-sim{background:rgba(146,114,69,.15);color:var(--ativo);}
+  .atestado-link{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700;text-decoration:none;white-space:nowrap;}
+  .atestado-muni{background:rgba(0,145,62,.15);color:var(--ativo);}
+  .atestado-uf{background:rgba(143,214,168,.35);color:var(--taupe);}
+  .atestado-reg{background:rgba(130,131,132,.15);color:var(--inativo);}
+  .atestado-banner{display:flex;align-items:center;gap:10px;background:rgba(143,214,168,.22);border:1px solid var(--duna);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13.5px;}
+  .atestado-banner a{color:var(--taupe);font-weight:700;text-decoration:none;}
+  .atestado-banner a:hover{text-decoration:underline;}
   .bar-cell{display:flex;align-items:center;gap:8px;}
   .bar-track{flex:1;height:6px;background:var(--cinza-claro);border-radius:99px;overflow:hidden;min-width:50px;}
   .bar-fill{height:100%;background:var(--primary);border-radius:99px;}
@@ -124,10 +131,42 @@ Chart.register(ChartDataLabels);
 Chart.defaults.set('plugins.datalabels', {display:false});
 
 let DATA = null;
+let ATESTADOS = null;
 const UFS = new Set();
 
-fetch('data.json').then(r=>r.json()).then(d=>{
+const UF_REGIAO = {
+  AC:'Norte', AP:'Norte', AM:'Norte', PA:'Norte', RO:'Norte', RR:'Norte', TO:'Norte',
+  AL:'Nordeste', BA:'Nordeste', CE:'Nordeste', MA:'Nordeste', PB:'Nordeste', PE:'Nordeste', PI:'Nordeste', RN:'Nordeste', SE:'Nordeste',
+  DF:'Centro-Oeste', GO:'Centro-Oeste', MS:'Centro-Oeste', MT:'Centro-Oeste',
+  ES:'Sudeste', MG:'Sudeste', RJ:'Sudeste', SP:'Sudeste',
+  PR:'Sul', RS:'Sul', SC:'Sul',
+};
+const normAcento = s => (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim();
+
+function atestadoLink(municipio, uf){
+  if(!ATESTADOS || !uf) return null;
+  const key = normAcento(municipio) + '|' + uf;
+  if(ATESTADOS.por_municipio[key]){
+    const a = ATESTADOS.por_municipio[key];
+    return {level:'município', label:`Atestados de ${a.municipio}/${a.uf}`, arquivo:a.arquivo};
+  }
+  if(ATESTADOS.por_uf[uf]){
+    const a = ATESTADOS.por_uf[uf];
+    return {level:'estado', label:`Atestados do estado ${uf}`, arquivo:a.arquivo};
+  }
+  const reg = UF_REGIAO[uf];
+  if(reg && ATESTADOS.por_regiao[reg]){
+    return {level:'região', label:`Atestados da Região ${reg}`, arquivo:ATESTADOS.por_regiao[reg]};
+  }
+  return null;
+}
+
+Promise.all([
+  fetch('data.json').then(r=>r.json()),
+  fetch('atestados_manifest.json').then(r=>r.json()).catch(()=>null),
+]).then(([d, at])=>{
   DATA = d;
+  ATESTADOS = at;
   d.cobertura.forEach(r=>UFS.add(r.UF));
   d.panorama_uf.forEach(r=>UFS.add(r.UF));
   init();
@@ -330,6 +369,7 @@ function renderMapa(){
         <select class="uf-select" id="filtro-uf"><option value="">Todas as UFs</option>${[...UFS].sort().map(u=>`<option value="${u}">${u}</option>`).join('')}</select>
         <span class="count" id="busca-count"></span>
       </div>
+      <div class="atestado-banner" id="atestado-banner" style="display:none"></div>
       <div id="map-rede"></div>
       <div class="map-legend">
         <label style="cursor:pointer"><input type="checkbox" id="filtro-ativa" checked><span class="dot" style="background:#00913e"></span>Maioria ativa</label>
@@ -355,10 +395,12 @@ function renderMapa(){
       radius, weight:1, color:'#095744', fillColor: majorityAtivo ? '#00913e' : '#828384',
       fillOpacity:.82,
     }).addTo(map);
+    const popupAtestado = atestadoLink(p['Município'], p.UF);
     marker.bindPopup(`
       <div class="popup-title">${p['Município']} — ${p.UF}</div>
       <div class="popup-row">Ativos: <b>${FMT.int(ativos)}</b> · Inativos: <b>${FMT.int(p['Inativos'])}</b> · Total: <b>${FMT.int(total)}</b></div>
       <div class="popup-row">% da rede: ${FMT.pct(p['% do Total Rede'])} · PIB Agro 2021: ${FMT.bi(p['PIB 2021'])}</div>
+      ${popupAtestado?`<div class="popup-row"><a class="atestado-link atestado-${popupAtestado.level==='município'?'muni':popupAtestado.level==='estado'?'uf':'reg'}" href="${popupAtestado.arquivo}" target="_blank">📄 ${popupAtestado.label}</a></div>`:''}
     `);
     return {marker, lat:p.lat, lon:p.lon, uf:p.UF, municipio:p['Município'], majorityAtivo, key: norm(`${p['Município']} ${p.UF}`)};
   });
@@ -368,6 +410,22 @@ function renderMapa(){
   const filtroAtiva = sec.querySelector('#filtro-ativa');
   const filtroInativa = sec.querySelector('#filtro-inativa');
   const filtroUF = sec.querySelector('#filtro-uf');
+  const banner = sec.querySelector('#atestado-banner');
+
+  function updateAtestadoBanner(uf, visible){
+    let link = null;
+    if(visible.length===1){
+      link = atestadoLink(visible[0].municipio, visible[0].uf);
+    } else if(uf){
+      link = atestadoLink('', uf);
+    }
+    if(link){
+      banner.style.display = 'flex';
+      banner.innerHTML = `📄 <a href="${link.arquivo}" target="_blank">${link.label}</a> — atestados de capacidade técnica (Grupo Studio)`;
+    } else {
+      banner.style.display = 'none';
+    }
+  }
 
   function applyMapFilters(){
     const q = norm(searchInput.value.trim());
@@ -381,6 +439,7 @@ function renderMapa(){
       if(show){ if(!map.hasLayer(m.marker)) m.marker.addTo(map); visible.push(m); }
       else if(map.hasLayer(m.marker)) map.removeLayer(m.marker);
     });
+    updateAtestadoBanner(uf, visible);
     if(q || uf){
       countEl.textContent = `${visible.length} município(s) encontrado(s)`;
       if(visible.length===1){
@@ -420,6 +479,11 @@ function renderCobertura(){
       {key:'% do Total Rede', label:'% da Rede', render:r=>barCell(r['% do Total Rede'])},
       {key:'% Ativos (local)', label:'% Ativos (local)', render:r=>barCell(r['% Ativos (local)'])},
       {key:'PIB 2021', label:'PIB Agro 2021', render:r=>FMT.bi(r['PIB 2021'])},
+      {key:'_atestados', label:'Atestados', render:r=>{
+        const a = atestadoLink(r['Município'], r.UF);
+        if(!a) return '-';
+        return `<a class="atestado-link atestado-${a.level==='município'?'muni':a.level==='estado'?'uf':'reg'}" href="${a.arquivo}" target="_blank" title="${a.label}">📄 ${a.level}</a>`;
+      }},
     ]
   });
 }

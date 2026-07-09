@@ -1,0 +1,898 @@
+[
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MT",
+  "municipio": "Sorriso",
+  "paginas": [
+   21
+  ],
+  "arquivo": "Região Centro-Oeste/MT/Sorriso.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MT",
+  "municipio": "Várzea Grande",
+  "paginas": [
+   155
+  ],
+  "arquivo": "Região Centro-Oeste/MT/Várzea Grande.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MT",
+  "municipio": "Canarana",
+  "paginas": [
+   160
+  ],
+  "arquivo": "Região Centro-Oeste/MT/Canarana.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MT",
+  "municipio": "Sapezal",
+  "paginas": [
+   162
+  ],
+  "arquivo": "Região Centro-Oeste/MT/Sapezal.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MT",
+  "municipio": "Barra do Garças",
+  "paginas": [
+   185,
+   193
+  ],
+  "arquivo": "Região Centro-Oeste/MT/Barra do Garças.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MT",
+  "municipio": "Cuiabá",
+  "paginas": [
+   310,
+   399
+  ],
+  "arquivo": "Região Centro-Oeste/MT/Cuiabá.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Ribeirão Preto",
+  "paginas": [
+   23,
+   110,
+   137,
+   386
+  ],
+  "arquivo": "Região Sudeste/SP/Ribeirão Preto.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Campinas",
+  "paginas": [
+   108
+  ],
+  "arquivo": "Região Sudeste/SP/Campinas.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Andradina",
+  "paginas": [
+   109
+  ],
+  "arquivo": "Região Sudeste/SP/Andradina.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Jaboticabal",
+  "paginas": [
+   111
+  ],
+  "arquivo": "Região Sudeste/SP/Jaboticabal.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Taquarituba",
+  "paginas": [
+   112
+  ],
+  "arquivo": "Região Sudeste/SP/Taquarituba.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Presidente Prudente",
+  "paginas": [
+   115
+  ],
+  "arquivo": "Região Sudeste/SP/Presidente Prudente.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "São Sebastião",
+  "paginas": [
+   119
+  ],
+  "arquivo": "Região Sudeste/SP/São Sebastião.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "São Paulo",
+  "paginas": [
+   123,
+   129,
+   260,
+   267,
+   388
+  ],
+  "arquivo": "Região Sudeste/SP/São Paulo.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Capivari",
+  "paginas": [
+   126
+  ],
+  "arquivo": "Região Sudeste/SP/Capivari.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Araçatuba",
+  "paginas": [
+   127,
+   130,
+   286
+  ],
+  "arquivo": "Região Sudeste/SP/Araçatuba.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Barueri",
+  "paginas": [
+   128,
+   135,
+   301,
+   377
+  ],
+  "arquivo": "Região Sudeste/SP/Barueri.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Suzano",
+  "paginas": [
+   134
+  ],
+  "arquivo": "Região Sudeste/SP/Suzano.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Cabreúva",
+  "paginas": [
+   263
+  ],
+  "arquivo": "Região Sudeste/SP/Cabreúva.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Indaiatuba",
+  "paginas": [
+   268
+  ],
+  "arquivo": "Região Sudeste/SP/Indaiatuba.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Agudos",
+  "paginas": [
+   269
+  ],
+  "arquivo": "Região Sudeste/SP/Agudos.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Osasco",
+  "paginas": [
+   270,
+   282
+  ],
+  "arquivo": "Região Sudeste/SP/Osasco.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Jandira",
+  "paginas": [
+   274
+  ],
+  "arquivo": "Região Sudeste/SP/Jandira.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Guarulhos",
+  "paginas": [
+   276
+  ],
+  "arquivo": "Região Sudeste/SP/Guarulhos.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Arujá",
+  "paginas": [
+   284
+  ],
+  "arquivo": "Região Sudeste/SP/Arujá.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "São Caetano do Sul",
+  "paginas": [
+   288
+  ],
+  "arquivo": "Região Sudeste/SP/São Caetano do Sul.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Cordeirópolis",
+  "paginas": [
+   293
+  ],
+  "arquivo": "Região Sudeste/SP/Cordeirópolis.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Diadema",
+  "paginas": [
+   296
+  ],
+  "arquivo": "Região Sudeste/SP/Diadema.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Botucatu",
+  "paginas": [
+   298
+  ],
+  "arquivo": "Região Sudeste/SP/Botucatu.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Cotia",
+  "paginas": [
+   378
+  ],
+  "arquivo": "Região Sudeste/SP/Cotia.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Santo André",
+  "paginas": [
+   380
+  ],
+  "arquivo": "Região Sudeste/SP/Santo André.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Ilha Solteira",
+  "paginas": [
+   381
+  ],
+  "arquivo": "Região Sudeste/SP/Ilha Solteira.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "SP",
+  "municipio": "Santos",
+  "paginas": [
+   389
+  ],
+  "arquivo": "Região Sudeste/SP/Santos.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Porto Alegre",
+  "paginas": [
+   24,
+   42,
+   50,
+   52,
+   63,
+   73,
+   82,
+   225,
+   312,
+   342
+  ],
+  "arquivo": "Região Sul/RS/Porto Alegre.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Três de Maio",
+  "paginas": [
+   40
+  ],
+  "arquivo": "Região Sul/RS/Três de Maio.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Encantado",
+  "paginas": [
+   43
+  ],
+  "arquivo": "Região Sul/RS/Encantado.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Ajuricaba",
+  "paginas": [
+   45
+  ],
+  "arquivo": "Região Sul/RS/Ajuricaba.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Cachoeirinha",
+  "paginas": [
+   55
+  ],
+  "arquivo": "Região Sul/RS/Cachoeirinha.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Tapejara",
+  "paginas": [
+   60
+  ],
+  "arquivo": "Região Sul/RS/Tapejara.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Novo Hamburgo",
+  "paginas": [
+   65
+  ],
+  "arquivo": "Região Sul/RS/Novo Hamburgo.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Santa Rosa",
+  "paginas": [
+   75
+  ],
+  "arquivo": "Região Sul/RS/Santa Rosa.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Caxias do Sul",
+  "paginas": [
+   80,
+   227
+  ],
+  "arquivo": "Região Sul/RS/Caxias do Sul.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Cruz Alta",
+  "paginas": [
+   214
+  ],
+  "arquivo": "Região Sul/RS/Cruz Alta.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "RS",
+  "municipio": "Santo Augusto",
+  "paginas": [
+   344
+  ],
+  "arquivo": "Região Sul/RS/Santo Augusto.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Curitiba",
+  "paginas": [
+   29,
+   252,
+   364
+  ],
+  "arquivo": "Região Sul/PR/Curitiba.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Itapejara d'Oeste",
+  "paginas": [
+   47
+  ],
+  "arquivo": "Região Sul/PR/Itapejara d'Oeste.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Quedas do Iguaçu",
+  "paginas": [
+   56
+  ],
+  "arquivo": "Região Sul/PR/Quedas do Iguaçu.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Braganey",
+  "paginas": [
+   57
+  ],
+  "arquivo": "Região Sul/PR/Braganey.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Maringá",
+  "paginas": [
+   64
+  ],
+  "arquivo": "Região Sul/PR/Maringá.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Ponta Grossa",
+  "paginas": [
+   72
+  ],
+  "arquivo": "Região Sul/PR/Ponta Grossa.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "São Mateus do Sul",
+  "paginas": [
+   74,
+   253
+  ],
+  "arquivo": "Região Sul/PR/São Mateus do Sul.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Lapa",
+  "paginas": [
+   224
+  ],
+  "arquivo": "Região Sul/PR/Lapa.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Imbituva",
+  "paginas": [
+   234
+  ],
+  "arquivo": "Região Sul/PR/Imbituva.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Pinhais",
+  "paginas": [
+   237
+  ],
+  "arquivo": "Região Sul/PR/Pinhais.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Cascavel",
+  "paginas": [
+   250
+  ],
+  "arquivo": "Região Sul/PR/Cascavel.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "PR",
+  "municipio": "Paranaguá",
+  "paginas": [
+   360
+  ],
+  "arquivo": "Região Sul/PR/Paranaguá.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "SC",
+  "municipio": "Rio do Sul",
+  "paginas": [
+   44,
+   58,
+   59,
+   226
+  ],
+  "arquivo": "Região Sul/SC/Rio do Sul.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "SC",
+  "municipio": "Indaial",
+  "paginas": [
+   220
+  ],
+  "arquivo": "Região Sul/SC/Indaial.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "SC",
+  "municipio": "Chapecó",
+  "paginas": [
+   223,
+   233
+  ],
+  "arquivo": "Região Sul/SC/Chapecó.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "SC",
+  "municipio": "Pomerode",
+  "paginas": [
+   243
+  ],
+  "arquivo": "Região Sul/SC/Pomerode.pdf"
+ },
+ {
+  "regiao": "Sul",
+  "uf": "SC",
+  "municipio": "Tijucas",
+  "paginas": [
+   247
+  ],
+  "arquivo": "Região Sul/SC/Tijucas.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "RJ",
+  "municipio": "Nilópolis",
+  "paginas": [
+   95
+  ],
+  "arquivo": "Região Sudeste/RJ/Nilópolis.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "RJ",
+  "municipio": "Belford Roxo",
+  "paginas": [
+   295
+  ],
+  "arquivo": "Região Sudeste/RJ/Belford Roxo.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Uberlândia",
+  "paginas": [
+   102,
+   113
+  ],
+  "arquivo": "Região Sudeste/MG/Uberlândia.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Conselheiro Lafaiete",
+  "paginas": [
+   103
+  ],
+  "arquivo": "Região Sudeste/MG/Conselheiro Lafaiete.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Montes Claros",
+  "paginas": [
+   104
+  ],
+  "arquivo": "Região Sudeste/MG/Montes Claros.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Pirapora",
+  "paginas": [
+   105
+  ],
+  "arquivo": "Região Sudeste/MG/Pirapora.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Alvinópolis",
+  "paginas": [
+   106
+  ],
+  "arquivo": "Região Sudeste/MG/Alvinópolis.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Araguari",
+  "paginas": [
+   136
+  ],
+  "arquivo": "Região Sudeste/MG/Araguari.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Belo Horizonte",
+  "paginas": [
+   277
+  ],
+  "arquivo": "Região Sudeste/MG/Belo Horizonte.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Pedro Leopoldo",
+  "paginas": [
+   279
+  ],
+  "arquivo": "Região Sudeste/MG/Pedro Leopoldo.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Carmo do Paranaíba",
+  "paginas": [
+   302
+  ],
+  "arquivo": "Região Sudeste/MG/Carmo do Paranaíba.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Juiz de Fora",
+  "paginas": [
+   374
+  ],
+  "arquivo": "Região Sudeste/MG/Juiz de Fora.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Uberaba",
+  "paginas": [
+   376
+  ],
+  "arquivo": "Região Sudeste/MG/Uberaba.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Timóteo",
+  "paginas": [
+   384
+  ],
+  "arquivo": "Região Sudeste/MG/Timóteo.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Matias Barbosa",
+  "paginas": [
+   385
+  ],
+  "arquivo": "Região Sudeste/MG/Matias Barbosa.pdf"
+ },
+ {
+  "regiao": "Sudeste",
+  "uf": "MG",
+  "municipio": "Ipatinga",
+  "paginas": [
+   387
+  ],
+  "arquivo": "Região Sudeste/MG/Ipatinga.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "TO",
+  "municipio": "Araguaína",
+  "paginas": [
+   149,
+   173
+  ],
+  "arquivo": "Região Centro-Oeste/TO/Araguaína.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MS",
+  "municipio": "Chapadão do Sul",
+  "paginas": [
+   150,
+   315
+  ],
+  "arquivo": "Região Centro-Oeste/MS/Chapadão do Sul.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "MS",
+  "municipio": "Campo Grande",
+  "paginas": [
+   398
+  ],
+  "arquivo": "Região Centro-Oeste/MS/Campo Grande.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "DF",
+  "municipio": "Brasília",
+  "paginas": [
+   156,
+   159,
+   395,
+   397
+  ],
+  "arquivo": "Região Centro-Oeste/DF/Brasília.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "RO",
+  "municipio": "Ji-Paraná",
+  "paginas": [
+   157
+  ],
+  "arquivo": "Região Centro-Oeste/RO/Ji-Paraná.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "RO",
+  "municipio": "Porto Velho",
+  "paginas": [
+   175
+  ],
+  "arquivo": "Região Centro-Oeste/RO/Porto Velho.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "PB",
+  "municipio": "Campina Grande",
+  "paginas": [
+   182
+  ],
+  "arquivo": "Região Nordeste/PB/Campina Grande.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "BA",
+  "municipio": "São Gonçalo dos Campos",
+  "paginas": [
+   183
+  ],
+  "arquivo": "Região Nordeste/BA/São Gonçalo dos Campos.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "BA",
+  "municipio": "Serrinha",
+  "paginas": [
+   184
+  ],
+  "arquivo": "Região Nordeste/BA/Serrinha.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "BA",
+  "municipio": "Vitória da Conquista",
+  "paginas": [
+   188,
+   421
+  ],
+  "arquivo": "Região Nordeste/BA/Vitória da Conquista.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "RN",
+  "municipio": "Nova Cruz",
+  "paginas": [
+   190
+  ],
+  "arquivo": "Região Nordeste/RN/Nova Cruz.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "RN",
+  "municipio": "Natal",
+  "paginas": [
+   201,
+   204
+  ],
+  "arquivo": "Região Nordeste/RN/Natal.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "RN",
+  "municipio": "Parnamirim",
+  "paginas": [
+   202
+  ],
+  "arquivo": "Região Nordeste/RN/Parnamirim.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "PE",
+  "municipio": "Brejão",
+  "paginas": [
+   192
+  ],
+  "arquivo": "Região Nordeste/PE/Brejão.pdf"
+ },
+ {
+  "regiao": "Nordeste",
+  "uf": "PA",
+  "municipio": "Belém",
+  "paginas": [
+   205
+  ],
+  "arquivo": "Região Nordeste/PA/Belém.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "GO",
+  "municipio": "Anápolis",
+  "paginas": [
+   311
+  ],
+  "arquivo": "Região Centro-Oeste/GO/Anápolis.pdf"
+ },
+ {
+  "regiao": "Centro-Oeste",
+  "uf": "GO",
+  "municipio": "Itumbiara",
+  "paginas": [
+   313
+  ],
+  "arquivo": "Região Centro-Oeste/GO/Itumbiara.pdf"
+ },
+ {
+  "regiao": "Norte",
+  "uf": "AM",
+  "municipio": "Manaus",
+  "paginas": [
+   324,
+   410
+  ],
+  "arquivo": "Região Norte/AM/Manaus.pdf"
+ }
+]

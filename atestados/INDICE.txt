@@ -1,0 +1,32 @@
+ATESTADOS DE CAPACIDADE TECNICA - GRUPO STUDIO
+Separado por regiao / estado / municipio
+
+Total de atestados individuais identificados com municipio: 95
+
+== Regiao Sul (28 municipios, 3 estados: PR, RS, SC) ==
+  PR: Braganey, Cascavel, Curitiba, Imbituva, Itapejara d'Oeste, Lapa, Maringá, Paranaguá, Pinhais, Ponta Grossa, Quedas do Iguaçu, São Mateus do Sul
+  RS: Ajuricaba, Cachoeirinha, Caxias do Sul, Cruz Alta, Encantado, Novo Hamburgo, Porto Alegre, Santa Rosa, Santo Augusto, Tapejara, Três de Maio
+  SC: Chapecó, Indaial, Pomerode, Rio do Sul, Tijucas
+
+== Regiao Sudeste (43 municipios, 3 estados: MG, RJ, SP) ==
+  MG: Alvinópolis, Araguari, Belo Horizonte, Carmo do Paranaíba, Conselheiro Lafaiete, Ipatinga, Juiz de Fora, Matias Barbosa, Montes Claros, Pedro Leopoldo, Pirapora, Timóteo, Uberaba, Uberlândia
+  RJ: Belford Roxo, Nilópolis
+  SP: Agudos, Andradina, Araçatuba, Arujá, Barueri, Botucatu, Cabreúva, Campinas, Capivari, Cordeirópolis, Cotia, Diadema, Guarulhos, Ilha Solteira, Indaiatuba, Jaboticabal, Jandira, Osasco, Presidente Prudente, Ribeirão Preto, Santo André, Santos, Suzano, São Caetano do Sul, São Paulo, São Sebastião, Taquarituba
+
+== Regiao Centro-Oeste (14 municipios, 6 estados: DF, GO, MS, MT, RO, TO) ==
+  DF: Brasília
+  GO: Anápolis, Itumbiara
+  MS: Campo Grande, Chapadão do Sul
+  MT: Barra do Garças, Canarana, Cuiabá, Sapezal, Sorriso, Várzea Grande
+  RO: Ji-Paraná, Porto Velho
+  TO: Araguaína
+
+== Regiao Norte (1 municipios, 1 estados: AM) ==
+  AM: Manaus
+
+== Regiao Nordeste (9 municipios, 5 estados: BA, PA, PB, PE, RN) ==
+  BA: Serrinha, São Gonçalo dos Campos, Vitória da Conquista
+  PA: Belém
+  PB: Campina Grande
+  PE: Brejão
+  RN: Natal, Nova Cruz, Parnamirim
