@@ -182,7 +182,7 @@ const TABS = [
   {id:'oportunidades', label:'Oportunidades'},
   {id:'crescimento_uf', label:'Crescimento PIB por UF'},
   {id:'crescimento_geral', label:'Top 50 Crescimento'},
-  {id:'pib_aberto', label:'Top 50 PIB em Aberto'},
+  {id:'pib_aberto', label:'Top 50 Prioritárias'},
   {id:'aproveitamento', label:'Aproveitamento por Estado'},
   {id:'metodologia', label:'Metodologia'},
 ];
@@ -526,18 +526,22 @@ function renderPanorama(){
 /* ---------- Oportunidades sem franqueado ---------- */
 function renderOportunidades(){
   const sec = document.getElementById('oportunidades');
-  sec.innerHTML = `<h2>Municípios sem Franqueado</h2><p class="subtitle">Ranking por PIB Agro 2021 — ${DATA.oportunidades.length.toLocaleString('pt-BR')} municípios sem presença da rede.</p><div class="note-box">${NOTA_PIB_NOMINAL}</div><div class="card"></div>`;
+  sec.innerHTML = `<h2>Municípios sem Franqueado Ativo</h2><p class="subtitle">Municípios com mais de 100 mil habitantes (Censo IBGE 2022) sem franquia ativa e performando — ${DATA.oportunidades.length.toLocaleString('pt-BR')} cidades disponíveis, ranqueadas por score de prioridade.</p><div class="card"></div>`;
   buildTable({
     container: sec.querySelector('.card'),
     rows: DATA.oportunidades,
     searchable: true, ufFilter: true,
-    defaultSort: {key:'PIB 2021', dir:-1},
+    defaultSort: {key:'Score', dir:-1},
     columns: [
       {key:'Rank', label:'#', render:r=>FMT.int(r.Rank)},
       {key:'Município', label:'Município'},
       {key:'UF', label:'UF'},
-      {key:'PIB 2021', label:'PIB Agro 2021', render:r=>FMT.bi(r['PIB 2021'])},
-      {key:'Cresc. 19→21', label:'Cresc. 19→21', render:r=>barCell(r['Cresc. 19→21'], r['Cresc. 19→21']>=0?'#00913e':'#828384')},
+      {key:'População', label:'População', render:r=>FMT.int(r['População'])},
+      {key:'Perfil Econômico', label:'Perfil', render:r=>`<span class="badge ${r['Perfil Econômico']==='AGRO'?'badge-ativo':'badge-inativo'}">${r['Perfil Econômico']}</span>`},
+      {key:'Regional', label:'Regional'},
+      {key:'Franqueados Ideal', label:'Franqueados Ideal', render:r=>FMT.int(r['Franqueados Ideal'])},
+      {key:'Em Aprendizado', label:'Em Aprendizado', render:r=>r['Em Aprendizado']?'<span class="badge badge-inativo">Sim</span>':'-'},
+      {key:'Score', label:'Score', render:r=>FMT.num2(r['Score'])},
     ]
   });
 }
@@ -594,13 +598,13 @@ function renderCrescimentoGeral(){
   });
 }
 
-/* ---------- Top 50 PIB Não Abordado ---------- */
+/* ---------- Top 50 Cidades Prioritárias ---------- */
 function renderPibAberto(){
   const sec = document.getElementById('pib_aberto');
-  sec.innerHTML = `<h2>Top 50 Maiores PIBs Agro sem Franqueado</h2><p class="subtitle">Municípios sem presença da rede, ordenados por potencial absoluto (PIB Agro 2021).</p><div class="note-box">${NOTA_PIB_NOMINAL}</div><div class="card"></div>`;
+  sec.innerHTML = `<h2>Top 50 Cidades Prioritárias para Expansão</h2><p class="subtitle">Sem franquia ativa e performando, ranqueadas por score de prioridade (população, demanda de franqueados e perfil econômico, com peso maior para perfil AGRO).</p><div class="card"></div>`;
   buildTable({
     container: sec.querySelector('.card'),
-    rows: DATA.top50_pib_nao_abordado,
+    rows: DATA.top50_prioritarias,
     searchable: true, ufFilter: true,
     defaultSort: {key:'Rank', dir:1},
     pageSize:50,
@@ -608,9 +612,11 @@ function renderPibAberto(){
       {key:'Rank', label:'#'},
       {key:'Município', label:'Município'},
       {key:'UF', label:'UF'},
-      {key:'PIB 2021 (bi)', label:'PIB Agro 2021', render:r=>FMT.num2(r['PIB 2021 (bi)'])},
-      {key:'PIB 2019 (bi)', label:'PIB Agro 2019', render:r=>FMT.num2(r['PIB 2019 (bi)'])},
-      {key:'Cresc. 19→21', label:'Cresc. 19→21', render:r=>barCell(r['Cresc. 19→21'])},
+      {key:'População', label:'População', render:r=>FMT.int(r['População'])},
+      {key:'Perfil Econômico', label:'Perfil', render:r=>`<span class="badge ${r['Perfil Econômico']==='AGRO'?'badge-ativo':'badge-inativo'}">${r['Perfil Econômico']}</span>`},
+      {key:'Regional', label:'Regional'},
+      {key:'Franqueados Ideal', label:'Franqueados Ideal', render:r=>FMT.int(r['Franqueados Ideal'])},
+      {key:'Score', label:'Score', render:r=>FMT.num2(r['Score'])},
     ]
   });
 }
